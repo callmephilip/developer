@@ -7,7 +7,7 @@ FROM python:3.9-slim-buster
 WORKDIR /app
 
 # Copies the requirements.txt file from your project to the working directory in the Docker image.
-COPY pyproject.toml poetry.lock .
+COPY ./pyproject.toml ./poetry.lock .
 
 # Runs pip install command in your Docker image to install Python dependencies listed in your requirements.txt file.
 RUN pip install poetry
